@@ -6,8 +6,32 @@
   </head>
   <body>
     <main>
+      <h1>Dummy form</h1>
       <!-- TODO: Create minimum interface according to wireframe -->
+      <h2>Text entry</h2>
+      <form>
+        <label for="send_message"></label>
+        <textarea id = "send_message"></textarea> 
+        <div>
+          <button type = "submit" id = "submit_button">Submit</button>
+          <button type = "reset" id = "reset_button">Clear</button>
+        </div>
+      </form>
+
+      <div id = "nameModal">
+        <h2>Name Entry</h2>
+        <form>
+          <label for="username">Username: </label>
+          <input id = "username" name = "username" type="text" placeholder="Enter username">
+          <div>
+            <button type = "submit" id = "submit_button1">Submit</button>
+            <button type = "reset" id = "reset_button1">Clear</button>
+          </div>
+        </form>
+        </div>
     </main>
-    <!-- TODO: Use <script> element to import the client.js file -->
+    
+    <!--: Use <script> element to import the client.js file -->
+      <script src = "scripts/client.js" type = "text/javascipt"></script>
   </body>
 </html>
