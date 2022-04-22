@@ -1,4 +1,4 @@
-/* TODO: Design interface */
+/*: Design interface */
 
 
 
@@ -15,23 +15,34 @@ html{
     border: 1;
 }
 
-
-
 #nameModal{
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%,-50%);
     margin: 0 auto;
     width: 50vw;
     background: #ccc;
 }
 
+#chat_box{
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+textarea{
+    width: 80vw;
+    height: 11wh;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    overflow-y: scroll;
+}
 
 
 
-
-
-
-/* TODO: Create media query {
+/* : Create media query {
 
 } */

@@ -6,17 +6,21 @@
   </head>
   <body>
     <main>
+      <div id = "chat-window">
       <h1>Dummy form</h1>
-      <!-- TODO: Create minimum interface according to wireframe -->
-      <h2>Text entry</h2>
-      <form>
+      <!-- : Create minimum interface according to wireframe -->
+      <div>
+      <!--<h2>Text entry</h2>-->
+      <form id = "chat_box" onsubmit = "return chat.send(this,'normal')">
         <label for="send_message"></label>
-        <textarea id = "send_message"></textarea> 
-        <div>
-          <button type = "submit" id = "submit_button">Submit</button>
-          <button type = "reset" id = "reset_button">Clear</button>
-        </div>
+        <textarea id = "send_message" placeholder="Send message"></textarea> 
+          <button type = "submit" id = "submit_button">
+            &raquo;  <!-- small arrow button -->
+          </button>
+          <!--<button type = "reset" id = "reset_button">Clear</button> -->
       </form>
+      </div>
+      </div>
 
       <div id = "nameModal">
         <h2>Name Entry</h2>
@@ -32,6 +36,6 @@
     </main>
     
     <!--: Use <script> element to import the client.js file -->
-      <script src = "scripts/client.js" type = "text/javascipt"></script>
+      <script src = "scripts/client.js" type = "text/javascript"></script>
   </body>
 </html>
