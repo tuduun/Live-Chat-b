@@ -9,11 +9,11 @@ const socket = new Server({ server });
 
 var users = {};
 
-// TODO: Customize server emoji set
+//: Customize server emoji set
 
 const emoji = {
   "greet": ["👋"],
-  "normal": ["😹","🐱","😼","😸","🙀"],
+  "normal": ["😹","🐱","😼","😸","🙀","🇲🇳"],
   "ping": ["🔊"],
 }
 
@@ -33,8 +33,7 @@ socket.on("connection", (sock, request) => {
     delete users[uid];
   });
 
-  // TODO: Remove this statement
-  users[uid].send("Hello from Heroku!");
+  //: Remove this statement
 
   sock.on("message", (message) => {
     message = JSON.parse(message);

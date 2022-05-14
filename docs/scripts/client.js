@@ -13,12 +13,20 @@ send_message.addEventListener("keydown", (evt) => {
     evt.preventDefault();
   }
 });
+
 submit_button1.addEventListener("keydown", (evt) => {
     if (evt.key == "Enter") {
       submit_button.click();
       evt.preventDefault();
     }
   });
+
+
+submit_button.addEventListener("click",(evt) => {
+  let randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.getElementById("body").style.backgroundColor = "#" + randomColor.toString();
+  console.log(randomColor)
+});
 
 //: Script WebSocket communication
 var chat = {
