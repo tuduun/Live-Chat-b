@@ -1,6 +1,6 @@
 # LiveChatBox
 
-##About
+## About
 
 This is similar to a Twitch Live chat where people from on any device can make a username and can immediately chat with other people who are also on the same page but on different devices!
 
