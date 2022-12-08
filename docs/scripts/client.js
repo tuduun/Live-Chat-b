@@ -1,4 +1,4 @@
-var host = "wss://cmpsc-302-chat-server-tuduun.herokuapp.com/"; // : Change to your Heroku host
+var host = "wss://cat-chat.fly.dev/"; // : Change to your Heroku host
 submit_button1.addEventListener("click", (evt) => {
   let name = username.value;
   if (!name) return false;
